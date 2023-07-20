@@ -1,0 +1,32 @@
+//----------------------------------
+Exercicio 1
+//----------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="botaoClicado()">
+    CLIQUE AQUI PARA MUDAR O TEXTO
+  </button>
+  <p id="paragrafo">
+    AQUI VAI APARECER ALGUMA COISA...
+  </p>
+</body>
+
+<script>
+
+function botaoClicado()
+{
+  const nome = prompt('Digite o seu nome');
+  const paragrafo = document.getElementById('paragrafo');
+  paragrafo.innerHTML = `E aí ${nome}! Você está deixando o seu site dinâmico.`;
+}
+
+</script>
+
+</html>

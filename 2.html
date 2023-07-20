@@ -1,0 +1,47 @@
+//----------------------------------
+Exercicio 2
+//----------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de cliques</title>
+  <style>
+    .invisivel {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  
+<button onclick="incrementar()">INCREMENTAR</button>
+<button onclick="zerar()">ZERAR CONTADOR</button>
+
+<p>
+  Ocontador está com 0 cliques
+</p>
+
+</body>
+
+<script>
+
+let contador = 0;
+let paragrafo = document.querySelector('p');
+
+function incrementar()
+{
+  ++contador;
+  paragrafo.innerHTML = `O contador está com ${contador} cliques`
+  paragrafo.classList.remove("invisivel");
+}
+
+function zerar()
+{
+  contador = 0;
+  paragrafo.classList.add("invisivel");
+}
+</script>
+
+</html>
